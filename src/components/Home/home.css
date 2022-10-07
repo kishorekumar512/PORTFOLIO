@@ -1,0 +1,124 @@
+.i {
+  display: flex;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+.i-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.i-right {
+  flex: 1;
+  position: relative;
+  /* background-color: white; */
+}
+
+.i-left-wrapper {
+  padding: 50px;
+  height: 50%;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.i-intro {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.name-k {
+  color: rgb(34, 55, 136);
+  font-weight: 700;
+}
+
+.i-name {
+  font-size: 60px;
+}
+
+.i-title {
+  height: 50px;
+  overflow: hidden;
+  /* background-color: aqua; */
+}
+
+.i-title-wrapper {
+  height: 100%;
+  animation: move 10s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+  25% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+  75% {
+    transform: translateY(-150px);
+  }
+  100% {
+    transform: translateY(-200px);
+  }
+}
+
+.i-title-item {
+  height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(220, 52, 74);
+  display: flex;
+  align-items: center;
+}
+
+.i-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+}
+
+.i-desc {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.btn-resume {
+  width: 100px;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 25px;
+  background-color: rgb(220, 52, 74);
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.div-resume {
+  padding-top: 10px;
+}
+
+.btn-resume:hover {
+  transform: scale(1.05);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
